@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Track Mouse Position </title>
+<body>
+   <h4 onclick="showCoords(event)" id="coordinates"> Click this heading to get the x (horizontal) and y (vertical) coordinates of the mouse pointer.</h4>
+ <script>
+   function showCoords(event){
+   var x=event.clientX;
+   var y=event.clientY;
+   var coords="X coords:"+x+",Y coords:"+y;
+   document.getElementById("coordinates").innerHTML=coords;}
+ </script>
+</body>
+</html>
